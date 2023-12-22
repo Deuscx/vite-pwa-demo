@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+const query = new URLSearchParams(window.location.search);
+const key = query.get('key');
 </script>
 
 <template>
   <div>
+    {{  key }}
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
